@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: docker-react-knowledgehut-container
+    image: docker-react-knowledgehut-image
+    build:
+      context: ./react-docker-knowledgehut
+    ports:
+      - 8080:80
